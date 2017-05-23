@@ -1,12 +1,20 @@
-.c-card {
-  width: 30%;
-  margin: 20px;
-}
+.c-card {}
 
 .c-card p {
-  font-size: 18px;
+    font-size: 18px;
 }
 
 .ant-card-head {
-  display: none;
+    display: none;
+}
+
+@media (min-width: 750px) {
+    .c-card {
+        width: 50%;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    .c-card:nth-child(2n) {
+        margin-right: 0;
+    }
 }

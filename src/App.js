@@ -3,11 +3,13 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {Spin, Alert} from 'antd';
+import classNames from 'classnames';
 
 import {fetchTweets} from './actions/index.actions';
 
 import Tweets from './components/Tweets/Tweets.component';
 import Header from './components/Header/Header.component';
+import Hero from './components/Hero/Hero.component';
 
 import './App.css';
 
@@ -24,6 +26,10 @@ const twitterUsers: Array<TwitterUser> = [
   {
     fullname: 'Hillary Clinton',
     username: 'hillaryclinton',
+  },
+  {
+    fullname: 'Frank Underwood',
+    username: 'Frank_Underwood',
   },
 ];
 
@@ -46,14 +52,17 @@ export class App extends Component {
     const {tweets = [], isFetching, errors} = this.props;
 
     return (
-      <div className="App">
-        <Header
-          fetchTweets={this.fetchTweets}
-          selected={this.state.selected}
-          users={twitterUsers}
-        />
-        {renderTweets({data: tweets, errors, isFetching})}
-      </div>
+      <main className="App">
+        <Hero user={this.state.selected} tweets={tweets} />
+        <div className="o-container">
+          <Header
+            fetchTweets={this.fetchTweets}
+            selected={this.state.selected}
+            users={twitterUsers}
+          />
+          {renderTweets({data: tweets, errors, isFetching})}
+        </div>
+      </main>
     );
   }
 }

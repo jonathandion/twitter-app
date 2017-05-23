@@ -8,3 +8,9 @@ body {
     font-family: sans-serif;
     background-color: #fbfbfb;
 }
+
+.o-container {
+    margin: 0 auto;
+    padding: 50px 10px;
+    max-width: 1280px;
+}

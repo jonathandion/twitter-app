@@ -23,18 +23,14 @@ const Header = ({
   users: Array<Object>,
 }) => {
   return (
-    <header className="c-header">
+    <nav className="c-nav">
       <Radio.Group value={selected} onChange={e => fetchTweets(e.target.value)}>
         {renderButtons(users)}
       </Radio.Group>
-      <Input.Search
-        placeholder="Search username"
-        style={{
-          width: 200,
-        }}
-        onSearch={fetchTweets}
-      />
-    </header>
+      <div className="c-nav__search-wrapper">
+        <Input.Search placeholder="Search username" onSearch={fetchTweets} />
+      </div>
+    </nav>
   );
 };
 
