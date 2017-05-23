@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components <App /> renders correctly 1`] = `
+<div
+  className="App"
+>
+  <header>
+    <div
+      className="ant-radio-group"
+      onMouseEnter={undefined}
+      onMouseLeave={undefined}
+      style={undefined}
+    >
+      <label
+        className="ant-radio-button-wrapper ant-radio-button-wrapper-checked"
+        onMouseEnter={undefined}
+        onMouseLeave={undefined}
+        style={undefined}
+      >
+        <span
+          className="ant-radio-button ant-radio-button-checked"
+          style={Object {}}
+        >
+          <input
+            checked={true}
+            className="ant-radio-button-input"
+            disabled={false}
+            name={undefined}
+            onBlur={[Function]}
+            onChange={[Function]}
+            onClick={undefined}
+            onFocus={[Function]}
+            readOnly={undefined}
+            tabIndex={undefined}
+            type="radio"
+          />
+          <span
+            className="ant-radio-button-inner"
+          />
+        </span>
+        <span>
+          Donald Trump
+        </span>
+      </label>
+      <label
+        className="ant-radio-button-wrapper"
+        onMouseEnter={undefined}
+        onMouseLeave={undefined}
+        style={undefined}
+      >
+        <span
+          className="ant-radio-button"
+          style={Object {}}
+        >
+          <input
+            checked={false}
+            className="ant-radio-button-input"
+            disabled={false}
+            name={undefined}
+            onBlur={[Function]}
+            onChange={[Function]}
+            onClick={undefined}
+            onFocus={[Function]}
+            readOnly={undefined}
+            tabIndex={undefined}
+            type="radio"
+          />
+          <span
+            className="ant-radio-button-inner"
+          />
+        </span>
+        <span>
+          Hillary Clinton
+        </span>
+      </label>
+    </div>
+    <span
+      className="ant-input-affix-wrapper"
+      style={
+        Object {
+          "width": 200,
+        }
+      }
+    >
+      <input
+        className="ant-input ant-input-search"
+        disabled={false}
+        onKeyDown={[Function]}
+        placeholder="Search username"
+        style={null}
+        type="text"
+      />
+      <span
+        className="ant-input-suffix"
+      >
+        <i
+          className="anticon anticon-search ant-input-search-icon"
+          onClick={[Function]}
+        />
+      </span>
+    </span>
+  </header>
+  <div
+    className="c-cards"
+  />
+</div>
+`;
