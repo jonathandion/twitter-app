@@ -1,5 +1,7 @@
 ## Twitter App
 
+[Heroku Demo](https://as-twitter-app.herokuapp.com/)
+
 ## Instructions
 
 Create a file called `.env` inside the `server` folder and add your **Twitter credentials**
