@@ -1,0 +1,19 @@
+.Nav {}
+
+.Nav .Nav__search-wrapper {
+    max-width: 580px;
+    margin: 0 auto;
+    padding-bottom: 25px;
+}
+
+.Nav .Nav__radio-group {
+    display: flex;
+    justify-content: center;
+    margin: 25px auto;
+}
+
+.Nav .Nav__radio-group label {
+    height: auto;
+}
+
+@media (min-width: 750px) {}

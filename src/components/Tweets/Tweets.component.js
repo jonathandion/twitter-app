@@ -6,7 +6,7 @@ import './Tweets.style.css';
 
 const Tweets = ({data}: {data: Array<Object>}) => {
   return (
-    <div className="c-cards">
+    <div className="Tweets">
       {data.map((tweet: Object) => <Tweet key={tweet.id} {...tweet} />)}
     </div>
   );

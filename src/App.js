@@ -8,7 +8,7 @@ import classNames from 'classnames';
 import {fetchTweets} from './actions/index.actions';
 
 import Tweets from './components/Tweets/Tweets.component';
-import Header from './components/Header/Header.component';
+import Nav from './components/Nav/Nav.component';
 import Hero from './components/Hero/Hero.component';
 
 import './App.css';
@@ -55,7 +55,7 @@ export class App extends Component {
       <main className="App">
         <Hero user={this.state.selected} tweets={tweets} />
         <div className="o-container">
-          <Header
+          <Nav
             fetchTweets={this.fetchTweets}
             selected={this.state.selected}
             users={twitterUsers}

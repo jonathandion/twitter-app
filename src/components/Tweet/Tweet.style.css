@@ -1,7 +1,26 @@
-.c-card {}
+.Tweet {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
 
-.c-card p {
+.Tweet p {
     font-size: 18px;
+}
+
+.Tweet .Tweet__info {
+    margin-top: 25px;
+}
+
+.Tweet .Tweet__info span {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.anticon-heart {
+    color: #f44336;
+    font-size: 14px;
 }
 
 .ant-card-head {
@@ -9,12 +28,11 @@
 }
 
 @media (min-width: 750px) {
-    .c-card {
-        width: 50%;
-        margin-right: 20px;
-        margin-bottom: 20px;
+    .Tweet {
+        width: 48%;
+        margin-right: 2%;
     }
-    .c-card:nth-child(2n) {
+    .Tweet:nth-child(2n) {
         margin-right: 0;
     }
 }
