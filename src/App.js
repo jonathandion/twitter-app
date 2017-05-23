@@ -80,8 +80,9 @@ function renderTweets({
   } else if (errors) {
     return (
       <Alert
-        message="Error"
-        description="A problem occured"
+        className="Alert"
+        message=":("
+        description="No username found"
         type="error"
         showIcon
       />
@@ -89,8 +90,9 @@ function renderTweets({
   } else if (data.length === 0 && isFetching === false) {
     return (
       <Alert
-        message="Warning"
-        description="No tweets :("
+        className="Alert"
+        message=":("
+        description="No tweets for that user"
         type="warning"
         showIcon
       />
