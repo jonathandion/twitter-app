@@ -5,7 +5,7 @@ import Api from '../api';
 let URL = 'http://localhost:3000';
 
 if (process.env.NODE_ENV === 'production') {
-  URL = 'http://localhost:3000';
+  URL = '';
 }
 
 export function* fetchTweets({user}: {user: string}) {
