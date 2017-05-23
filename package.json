@@ -58,7 +58,6 @@
     "whatwg-fetch": "2.0.3"
   },
   "scripts": {
-    "postinstall": "npm run build",
     "start": "cd ./server/ && node index.js",
     "dev": "node scripts/start.js",
     "server": "cd ./server/ && nodemon index.js --debug",
