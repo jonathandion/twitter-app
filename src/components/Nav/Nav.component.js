@@ -36,7 +36,11 @@ const Header = ({
         {renderButtons(users)}
       </Radio.Group>
       <div className="Nav__search-wrapper">
-        <Input.Search placeholder="Search username" onSearch={fetchTweets} />
+        <Input.Search
+          addonBefore="@"
+          placeholder="ALDO_shoes"
+          onSearch={fetchTweets}
+        />
       </div>
     </nav>
   );

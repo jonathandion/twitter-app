@@ -3,7 +3,6 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {Spin, Alert} from 'antd';
-import classNames from 'classnames';
 
 import {fetchTweets} from './actions/index.actions';
 
