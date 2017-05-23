@@ -17,7 +17,7 @@ Create a file called `.env` inside the `server` folder and add your **Twitter cr
 #### `npm run server` 
 Runs the server in development mode using nodemon.
 
-### `npm run dev`
+#### `npm run dev`
 Runs React with WebpackDevServer.
 
 ## Production
