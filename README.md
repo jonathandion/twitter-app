@@ -4,6 +4,10 @@
 
 ## Instructions
 
+Install dependencies:
+
+```npm install```
+
 Create a file called `.env` inside the `server` folder and add your **Twitter credentials**
 
 ````
@@ -12,6 +16,8 @@ Create a file called `.env` inside the `server` folder and add your **Twitter cr
   ACCESS_TOKEN_KEY=
   ACCESS_TOKEN_SECRET=
 ````
+
+```npm run start```
 
 
 ### Development
@@ -24,7 +30,7 @@ Runs React with WebpackDevServer.
 
 ## Production
 
-#### `npm start`
+#### `npm run start`
 
 Starts the app.
 
