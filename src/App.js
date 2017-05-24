@@ -33,6 +33,33 @@ const twitterUsers: Array<TwitterUser> = [
   },
 ];
 
+const withLoadingAndErrorIndicator = Component => props => {
+  if (props.isFetching) {
+    return <Spin />;
+  } else if (props.errors) {
+    return (
+      <Alert
+        className="Alert"
+        message=":("
+        description="No username found"
+        type="error"
+        showIcon
+      />
+    );
+  } else if (props.tweets.length === 0 && props.isFetching === false) {
+    return (
+      <Alert
+        className="Alert"
+        message=":("
+        description="No tweets for that user"
+        type="warning"
+        showIcon
+      />
+    );
+  }
+  return <Component {...props} />;
+};
+
 export class App extends Component {
   state: {
     selected: string,
@@ -49,7 +76,8 @@ export class App extends Component {
   };
 
   render() {
-    const {tweets = [], isFetching, errors} = this.props;
+    const {tweets = []} = this.props;
+    const enhanceTweets = withLoadingAndErrorIndicator(Tweets);
 
     return (
       <main className="App">
@@ -60,47 +88,11 @@ export class App extends Component {
             selected={this.state.selected}
             users={twitterUsers}
           />
-          {renderTweets({data: tweets, errors, isFetching})}
+          {enhanceTweets(this.props)}
         </div>
       </main>
     );
   }
-}
-
-function renderTweets({
-  data,
-  errors,
-  isFetching,
-}: {
-  data: Array<Object>,
-  errors: string,
-  isFetching: Boolean,
-}) {
-  if (isFetching) {
-    return <Spin />;
-  } else if (errors) {
-    return (
-      <Alert
-        className="Alert"
-        message=":("
-        description="No username found"
-        type="error"
-        showIcon
-      />
-    );
-  } else if (data.length === 0 && isFetching === false) {
-    return (
-      <Alert
-        className="Alert"
-        message=":("
-        description="No tweets for that user"
-        type="warning"
-        showIcon
-      />
-    );
-  }
-
-  return <Tweets data={data} />;
 }
 
 const mapStateToProps = (state: Object) => {
