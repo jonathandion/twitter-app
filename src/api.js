@@ -2,7 +2,7 @@
 
 function getJSON(url: string) {
   return fetch(url, {
-    method: 'get',
+    method: 'GET',
     headers: {
       'Content-Type': 'application/json',
     },

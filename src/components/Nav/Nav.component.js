@@ -1,7 +1,8 @@
 // @flow
 
 import React from 'react';
-import {Input, Radio} from 'antd';
+import Input from 'antd/lib/input';
+import Radio from 'antd/lib/radio';
 
 import './Nav.style.css';
 

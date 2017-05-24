@@ -2,7 +2,8 @@
 
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import {Spin, Alert} from 'antd';
+import Alert from 'antd/lib/alert';
+import Spin from 'antd/lib/spin';
 
 import {fetchTweets} from './actions/index.actions';
 
