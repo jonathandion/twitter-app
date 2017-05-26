@@ -1,5 +1,7 @@
 ## Twitter App
 
+[![Build Status](https://travis-ci.org/jonathandion/twitter-app.svg?branch=master)](https://travis-ci.org/jonathandion/twitter-app)
+
 [Heroku Demo](https://as-twitter-app.herokuapp.com/)
 
 ## Instructions
