@@ -8,6 +8,7 @@ describe('<App />', function() {
     const dispatch = jest.fn();
     const props = {
       dispatch,
+      tweets : []
     };
     const tree = renderer.create(<App {...props} />).toJSON();
     expect(tree).toMatchSnapshot();
